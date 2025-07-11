@@ -1,0 +1,35 @@
+site_name: Введение в DevOps                    #имя вашего сайта
+site_author: Arseniy                          #ваше имя
+
+nav:                                      #расположение всех ваших файлов
+  - Введение в DevOps: index.md
+  - Введение в DevOps: 
+    - Жизненный цикл CI/CD: src/pages/ci-cd.md
+    - Философия и принципы: src/pages/philosophy-principles.md
+  - Системы контроля версий: 
+    - Git основы и workflow: src/pages/git-bases.md
+    - Сравнение инструментов: src/pages/instruments.md
+      
+
+theme:
+  name: material
+  logo: 'src/img/d.png'                    #путь к лого вашего сайта
+  feature:
+    tabs: false
+  language: 'ru'
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.extra
+  - pymdownx.snippets:
+      base_path: docs/src
+    
+plugins:
+  - search
+
+extra_css:
+  - 'stylesheets/extra-page-content.css'
+  - 'https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'
